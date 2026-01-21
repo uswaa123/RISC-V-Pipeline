@@ -41,15 +41,15 @@ The processor implements the standard RISC-V integer instruction set (RV32I subs
 
 A testbench is provided in `tb_processor.sv`. It instantiates the processor, initializes memory from hex files (`instruction_memory`, `data_memory`, `register_file`), and generates a VCD file for waveform analysis.
 
-To run the simulation (requires Icarus Verilog or ModelSim/Questa):
+To run the simulation (requires Verilog or ModelSim/Questa):
 
 ```bash
 # Compilation
-iverilog -g2012 -o pipeline_sim *.sv
+vlog *.sv
 
 # Execution
-vvp pipeline_sim
+vsim -c tb_processor -voptargs=+acc -do "run -all"
 
 # Waveform Viewing
-gtkwave processor.vcd
+vsim -gtkwave processor.vcd
 ```
