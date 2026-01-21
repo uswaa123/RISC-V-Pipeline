@@ -53,3 +53,13 @@ vsim -c tb_processor -voptargs=+acc -do "run -all"
 # Waveform Viewing
 vsim -gtkwave processor.vcd
 ```
+
+## How to Use
+
+1. Clone this repository:
+     #git clone 
+2. Open the project in VsCode and ensure you have the necessary SystemVerilog extensions installed.
+3. Compile the SystemVerilog files using your preffered simulator.
+4. Use GTKWAVE to to visualize the waveform, but note that Multisim is required to run GTKWave.
+5. Run the testbench to observe the processor's functionality.
+   
