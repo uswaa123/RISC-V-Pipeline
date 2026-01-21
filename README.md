@@ -58,7 +58,7 @@ vsim -gtkwave processor.vcd
 
 1. Clone this repository:
      ```bash
-     git clone
+     git clone https://github.com/uswaa123/RISC-V-Pipeline.git
      ```
 2. Open the project in VsCode and ensure you have the necessary SystemVerilog extensions installed.
 3. Compile the SystemVerilog files using your preffered simulator.
